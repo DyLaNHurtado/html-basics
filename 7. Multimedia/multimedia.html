@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <audio controls loop autoplay>
+        <source src="urlejemplo.es/uri.mp3" type="audio/mp3" />
+        <source src="urlejemplo.es/uri.ogg" type="audio/ogg" />
+        <track src="uriarchivo/track.vtt" kind="subtitles" srclang="es" label="Español" type="text/vtt" /> <!-- para que esto funcione hay que habilitarlo en el servidor-->
+        <track src="uriarchivo/track.vtt" kind="subtitles" srclang="en" label="English" type="text/vtt" /> <!-- para que esto funcione hay que habilitarlo en el servidor-->
+    </audio>
+
+    <video width="" height="" poster="" controls autoplay muted> <!-- Poster si quisiera poner imagen mientras esta cargando el video-->
+        <source src="urlvideo.es/video.mp4" type="video/mp4"/>
+    </video>
+</body>
+</html>

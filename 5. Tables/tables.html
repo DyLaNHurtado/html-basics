@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!-- Tabla estructura simple -->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Direccion</th>
+            <th>telefono</th>
+        </tr>
+        <tr>
+            <td>Dylan</td>
+            <td>Hurtado</td>
+            <td>calle variopinto</td>
+            <td>945734213</td>
+        </tr>
+        <tr>
+            <td>Augusto</td>
+            <td>Garcia</td>
+            <td>calle jazmin</td>
+            <td>65756932</td>
+        </tr>
+        <tr>
+            <td>Mark</td>
+            <td>Knopfler</td>
+            <td>calle variopinto</td>
+            <td>34534562</td>
+        </tr>
+    </table>
+
+    <!-- Tabla estructura completa -->
+
+    <!-- rowspan="2" -> Atributo de td o th que junta dos filas osea se junta arriba y abajo -->
+    <!-- colspan="2" -> Atributo de td o th que junta dos columnas osea se junta izquierda y derecha -->
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: yellowgreen;">
+            <col style="background-color: coral;">
+        </colgroup>
+        <caption>Titulo de la tabla</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Direccion</th>
+                <th>telefono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dylan</td>
+                <td>Hurtado</td>
+                <td>calle variopinto</td>
+                <td>945734213</td>
+            </tr>
+            <tr>
+                <td>Augusto</td>
+                <td>Garcia</td>
+                <td>calle jazmin</td>
+                <td>65756932</td>
+            </tr>
+            <tr>
+                <td>Mark</td>
+                <td>Knopfler</td>
+                <td>calle variopinto</td>
+                <td>34534562</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+               <td>Pie de la tablaaaaaaaaaaaaaaaaaaaaaaaaaa</td> 
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <!-- ******************** -->
+    <!-- **   Formularios  ** -->
+    <!-- ******************** -->
+
+    <!-- method="get" si quieres que esten los datos en la url, (casi nunca siempre post) -->
+    <!-- action="https://www.url.es" direccion a donde se mandan los datos, si no pongo nada se envia a la misma pagina en la que esta -->
+    <form method="post" action="ejemplo.html">
+
+        <p>
+            <label for="nombre">Nombre: </label> <!-- **Importante** : El for del label debe coincidir con el name del elemento-->
+            <input type="text" name="nombre" required="required" /><!-- campo requerido para terminar el form -->
+        </p>
+
+        <p>
+            <label for="provincia">Nombre: </label>
+            <select name="provincia" id="provincia"> <!-- el id se usa para acceder desde css -->
+                <option value="Za">Zaragoza</option><!-- Manda el valor de value (Za) no lo de dentro  -->
+                <option value="V">Valencia</option>
+                <option>Teruel</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="descripcion">Descripcion: </label>
+            <textarea name="descripcion" cols="30" rows="10"> <!-- Para que no se pueda redimensionar tenemos que poner en el css resize:none -->
+            </textarea>
+        </p>
+
+        <p>
+            <button type="button">Haz click aqui</button><!-- type reset : resetea los datos y resetea el formulario-->
+                                                         <!-- type submit : envia los datos introducidos en el formulario-->
+        </p>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Nombre de usuario" />
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" value="Garcia" readonly="readonly"/><!--readonly no se modifica-->
+                <label for="direccion">Direccion: </label>
+                <input type="text" name="direccion" />
+            </p>
+            <p>
+                <label for="genero">Genero: </label>
+                <input type="radio" name="genero" value="m"/>Masculino <br/>
+                <input type="radio" name="genero" value="f" />Femenino <br/>
+                <input type="radio" name="genero" value="Heli" checked="checked" />Helicoptero de combate <br/>
+            </p>
+
+            <p>
+                <label for="aficiones">Aficiones: </label>
+                <input type="checkbox" name="aficiones" value="d"/>Dibujar <br/>
+                <input type="checkbox" name="aficiones" value="c" />Cine <br/>
+                <input type="checkbox" name="aficiones" value="p" />Programar <br/>
+            </p>
+            <p>
+                <input list="editor">
+                <datalist id="editor"> <!-- diferencia con el el select es que se puede escribir -->
+                    <option value="Atom"/>
+                    <option value="Notepad++"/>
+                    <option value="Sublime"/>
+                    <option value="VsCode"/>
+                    <option value="IntelliJ"/>
+                </datalist>
+
+            </p>
+        </fieldset>
+
+
+    </form>
+</body>
+</html>

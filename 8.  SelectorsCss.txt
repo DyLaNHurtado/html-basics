@@ -1,0 +1,58 @@
+--------------------------
+--	Selectores	--
+--------------------------
+
+*{} -> Selector universal
+#id{} -> id="id"
+.class{} -> class="class"
+h1{} -> etiquetas
+selector1,selector2{} -> cambian las propiedades de los elementos selector1 y selector 2
+selector1 selector2{} -> cambian las propiedades de los elementos selector2 
+			 que esten dentro de los selector1
+
+selector1>selector2 -> cambian las propiedades de selector2 que son hijos directos de aquellos 
+		       que seleccione selector1
+
+selector1+selector2 -> elementos de selector2 que estan justo despues de los de selector1
+selector1~selector2 -> elementos de selector2 que estan justo antes de los de selector1
+[colspan2="2"] -> selector por atributos
+
+
+----------------------------------
+--	Pseudoselectores	--
+----------------------------------
+
+-- Estado --
+
+Estructura Ejemplo -> selector:pseudoselector{background-color:red;}
+
+:link -> Enlace no visitado
+:visited -> Enlace visitado
+:enabled -> Elemento habilitado
+:disabled -> Elemento deshabilitado
+:checked -> Elemento seleccionado ejemplo checkbox
+:required -> Elementos requeridos
+:optional -> Elementos opcionales
+:focus -> Elemento del formulario donde tienes seleccionado con el cursor
+:hover -> Elemento del formulario donde tienes el cursor
+:empty -> Si esta vacio el input o lo que sea
+
+
+-- Posicion --
+
+:first-child -> primer hijo del elemento seleccionado
+:first -> primera ocurrencia del sector
+:first-of-type -> primera ocurrencia de ese tipo
+:last -> ultima ocurrencia del sector
+:last-child -> ultimo hijo del elemento seleccionado
+:last-of-type -> ultima ocurrencia de ese tipo
+:nth-child(2) -> Segundo hijo del elemento
+:nth-last-of-type() -> Ultimo elemento del sector
+
+-- Pseudoelementos --
+
+::first-line -> primer parrafo/linea
+::first-letter -> primera letra
+::after -> despues de ese elemento
+::before -> antes de ese elemento
+
